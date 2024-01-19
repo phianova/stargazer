@@ -55,13 +55,13 @@ export default function Home() {
           </form>
           {weather.main ? 
             <Weather data={weather}/> : 
-            <div className="h-[75vh] lg:w-11/12">
-              <p className="text-4xl pt-20 w-10/12 mx-auto text-center">Enter your location above to find out the stargazing conditions according to today's forecast.</p>
+            <div className="h-full lg:w-11/12">
+              <p className="text-4xl pt-10 lg:pt-20 w-10/12 mx-auto text-center">Enter your location above to find out the stargazing conditions according to today's forecast.</p>
               <p className="pt-10 w-10/12 mx-auto text-center text-lg">Weather data obtained from the <a className="font-bold hover:text-violet-200" href="https://openweathermap.org/" target="_blank">OpenWeather</a> API.
               <br/>For more information on how weather conditions affect astronomy, please see <a className="font-bold hover:text-violet-200" href="https://www.skyatnightmagazine.com/advice/skills/how-predict-weather-forecast-astronomy-stargazing" target="_blank">this piece by the BBC Sky at Night team</a>.</p>
             </div>}
         </main>
-        <footer className="w-full bg-violet-600/45 text-white z-20 relative bottom-0 flex flex-col items-center">
+        <footer className="w-full mt-10 bg-violet-600/45 text-white z-20 relative bottom-0 flex flex-col items-center">
             <div className="px-10 pt-10 flex flex-row justify-center content-center items-center">
             <a href="https://www.linkedin.com/in/sophia-warren-48207913b/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 hover:text-violet-200" fill="currentColor"viewBox="0 0 24 24">
