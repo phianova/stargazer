@@ -28,9 +28,9 @@ const Weather = ({data}) => {
                 <p className="text-2xl italic text-center">cloud cover</p>
             </div>
         </div>
-        {sunUp && <p className="text-xl text-center pb-6 text-blue-100">The sun will set at {sunsetTime} PM. Skies are darkest between midnight and {sunriseTime} AM. Check back after sunset for up-to-date weather conditions.</p>}
+        {sunUp && <p className="text-xl text-center pb-6 text-blue-100">The sun will set at {sunsetTime} PM and rise at around {sunriseTime} AM. Best viewing times are usually between midnight and dawn. Check back after sunset for up-to-date weather conditions.</p>}
         {!sunUp &&
-            <p className="text-xl text-center pb-6 text-red-100">The sun set at {sunsetTime} PM today. Skies are darkest between midnight and {sunriseTime} AM.</p>
+            <p className="text-xl text-center pb-6 text-red-100">The sun set at {sunsetTime} PM today and will rise at around {sunriseTime} AM. Best viewing times are usually between midnight and dawn.</p>
         }
     <div className="bg-black/60 relative p-8 rounded-lg mb-10">
         <p className="text-2xl text-center pb-2">{data.name} currently has <span className="text-3xl">{data.weather[0].description}</span></p>
